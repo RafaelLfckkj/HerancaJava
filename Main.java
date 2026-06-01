@@ -32,5 +32,9 @@ public class Main {
             acc5.updateBalance();
             System.out.println("Uptade!! ");
          }
+
+        // Account acc1 = new Account(1001, "Alex", 1000.00);
+        // acc1.withdraw(200.00);
+        // System.out.println(acc1.getBalance());
     }
 }

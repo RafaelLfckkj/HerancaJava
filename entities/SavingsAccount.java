@@ -1,26 +1,28 @@
 package entities;
 
-public class SavingsAccount extends Account{
+public final class SavingsAccount extends Account {
     private double interestRate;
 
-    public SavingsAccount(){
+    public SavingsAccount() {
         super();
     }
 
-    public SavingsAccount(Integer number, String holder, double balance, double interestRate){
+    public SavingsAccount(Integer number, String holder, double balance, double interestRate) {
         super(number, holder, balance);
         this.interestRate = interestRate;
     }
 
-    public double getInterestRate(){
+    public double getInterestRate() {
         return interestRate;
     }
 
-    public void setInterestRate(double interestRate){
+    public void setInterestRate(double interestRate) {
         this.interestRate = interestRate;
     }
 
-    public void updateBalance(){
+    public void updateBalance() {
         balance += balance * interestRate;
     }
+
+   
 }
